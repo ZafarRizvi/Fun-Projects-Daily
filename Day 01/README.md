@@ -5,10 +5,10 @@
 
 <h5>Concepts used</h5>
 <ul>
-> map, filter
-> Hooks (Usestate)
-> Componets creating
-> Passing function to a component
+<li> map, filter <li>
+<li> Hooks (Usestate) </li>
+<li> Componets creating</li>
+<li> Passing function to a component</li>
 </ul>
 
 <hr/>
