@@ -3,6 +3,25 @@ import { useState } from "react";
 function App() {
   const [fValue, setFValue] = useState("0");
 
+  const btnArr = [
+    "1",
+    "2",
+    "3",
+    "+",
+    "4",
+    "5",
+    "6",
+    "-",
+    "7",
+    "8",
+    "9",
+    "*",
+    ".",
+    "0",
+    "=",
+    "/",
+  ];
+
   return (
     <>
       <div className="flex justify-center h-screen items-center bg-black">
@@ -19,107 +38,30 @@ function App() {
               readOnly
             />
             <div className="grid grid-cols-4 gap-3">
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("1")}
-              >
-                1
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("2")}
-              >
-                2
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("3")}
-              >
-                3
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("+")}
-              >
-                +
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("4")}
-              >
-                4
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("5")}
-              >
-                5
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("6")}
-              >
-                6
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-              >
-                -
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("7")}
-              >
-                7
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("8")}
-              >
-                8
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("9")}
-              >
-                9
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-              >
-                *
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-                onClick={() => setFValue("0")}
-              >
-                0
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg"
-              >
-                .
-              </button>
-              <button
-                type="button"
-                className="bg-slate-200 px-3 py-2 rounded-lg grid col-span-2"
-              >
-                =
-              </button>
+              {btnArr.map((btnText, index) => {
+                return (
+                  <button
+                    key={index}
+                    className="bg-slate-200 px-3 py-2 rounded-lg"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (btnText === "=") {
+                        setFValue(eval(fValue));
+                      } else if (btnText === "C") {
+                        setFValue("0");
+                      } else {
+                        if (fValue === "0") {
+                          setFValue(btnText);
+                        } else {
+                          setFValue(fValue + btnText);
+                        }
+                      }
+                    }}
+                  >
+                    {btnText}
+                  </button>
+                );
+              })}
             </div>
           </form>
         </div>
