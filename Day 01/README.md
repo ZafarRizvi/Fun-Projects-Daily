@@ -5,7 +5,7 @@
 
 <h5>Concepts used</h5>
 <ul>
-<li> map, filter <li>
+<li> map, filter </li>
 <li> Hooks (Usestate) </li>
 <li> Componets creating</li>
 <li> Passing function to a component</li>
