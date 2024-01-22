@@ -1,0 +1,45 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetbtn {
+  background-color: #2f00ff;
+  color: white;
+  padding: 15px 32px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.resetbtn:hover {
+  background-color: #1f097e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #b7b7b7;
+  background-color: #2f00ff;
+  cursor: pointer;
+  border: 1px solid #2f00ff;
+  margin: 3px;
+}
