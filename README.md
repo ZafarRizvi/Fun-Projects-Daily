@@ -9,5 +9,9 @@
     <li>Day 03 => Calculator</li>
     <li>Day 04 => Fancy Currency Convertor with API integretion (Making coustom Hooks)</li>
     <li>Day 05 =></li>
-    <li>Day 06 =></li>
+    <li>Day 06 => Tic Tac Toe</li>
+    <li>Day 07 => Digital Clock</li>
+    <li>Day 08 => Qoute Generator</li>
+    <li>Day 09 => Quiz App</li>
+
 </ol>
