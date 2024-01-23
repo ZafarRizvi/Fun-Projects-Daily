@@ -1,0 +1,70 @@
+.genertor-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 40%;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #9d9d9d;
+}
+
+.pass-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pass-feild {
+  margin-top: 10px;
+  border: 1px solid #9d9d9d;
+  border-radius: 10px 0px 0px 10px;
+  font-size: larger;
+  padding: 5px 10px;
+  flex: 4;
+}
+
+.copy-btn {
+  flex: 1;
+  margin-top: 10px;
+  border-radius: 0px 10px 10px 0px;
+  border: none;
+  font-size: larger;
+  padding: 5px 10px;
+  background-color: #0026ffdb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dependency-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.length-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.char-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.num-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
