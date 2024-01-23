@@ -13,5 +13,5 @@
     <li>Day 07 => Digital Clock</li>
     <li>Day 08 => Qoute Generator</li>
     <li>Day 09 => Quiz App</li>
-
+    <li>Day 10 => Password Generator</li>
 </ol>
