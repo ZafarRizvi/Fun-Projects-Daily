@@ -1,0 +1,20 @@
+.todo-item-div {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding: 0px 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.icon-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+}

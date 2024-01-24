@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./genertor.css";
 
 const Genertor = () => {
-  const [password, setPassword] = useState("dasdsa");
+  const [password, setPassword] = useState("");
   const [passLen, setPassLen] = useState(10);
   const [symbolsIncluded, setSymbolsIncluded] = useState(false);
   const [numIncluded, setNumIncluded] = useState(false);

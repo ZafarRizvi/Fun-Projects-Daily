@@ -1,0 +1,63 @@
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(231, 231, 231);
+  margin-bottom: 20px;
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.todo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.task-input {
+  width: 75%;
+  height: 30px;
+  border-radius: 10px 0px 0px 10px;
+  border: 1px solid rgb(0, 0, 0);
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task-btn {
+  width: 15%;
+  height: 34px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: blueviolet;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(138, 43, 226);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
