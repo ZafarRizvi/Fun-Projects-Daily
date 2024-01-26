@@ -9,6 +9,7 @@ const TodoItems = (props) => {
       <div className="icon-div">
         <h3>E</h3>
         <h3>D</h3>
+        <p>This is of Github</p>
       </div>
     </div>
   );
