@@ -4,33 +4,45 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(51, 10, 140);
-  color: aliceblue;
+  background-color: rgb(38, 0, 133);
+  color: #fff;
 }
 
 .main-div span {
   color: aqua;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.game-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  border: 1px solid aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  border: 1px solid #fff;
   cursor: pointer;
+  font-size: 50px;
 }
 
-.box img {
-  width: 70px;
-  height: 70px;
+.reset-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  color: #090051;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: 800;
+}
+
+.reset-btn:hover {
+  background-color: #090051;
+  color: aqua;
 }
