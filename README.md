@@ -15,4 +15,5 @@
     <li>Day 09 => Quiz App</li>
     <li>Day 10 => Password Generator</li>
     <li>Day 11 => Todo React</li>
+    <li>Day 12 => Tic Tac Toe React</li>
 </ol>
